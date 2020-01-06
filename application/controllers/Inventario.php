@@ -6,8 +6,8 @@
  * Time: 08:42 PM
  */
 
-include (APPPATH."controllers/Padre_Session.php");
-class Inventario extends Padre_Session
+include (APPPATH."controllers/New_Padre.php");
+class Inventario extends New_Padre
 {
 
     public function __construct()

@@ -39,4 +39,17 @@ class Cotizacion_m extends CI_Model{
         $query = $this->db->get();
         return $query->result();
     }
+
+    public function getAllCotizaciones($id= null){
+        $this->db->select("*");
+        $this->db->from("cotizacion");
+
+
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+
+
+
 }

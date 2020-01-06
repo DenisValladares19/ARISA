@@ -43,6 +43,11 @@ class Cotizacion extends Padre_Desing
         $tipo = $this->Cotizacion_m->getAllTipoImpresion();
         echo json_encode($tipo);
     }
+
+    public function getAllCotizacion(){
+        $tipo = $this->Cotizacion_m->getAllCotizaciones();
+        echo json_encode($tipo);
+    }
     
     public function  newMaterial(){
         $id = $this->input->post("id");
